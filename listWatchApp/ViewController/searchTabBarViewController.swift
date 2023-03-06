@@ -7,62 +7,74 @@
 
 import UIKit
 
-class searchTabBarViewController: UIViewController {
+class searchTabBarViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate {
     
-    var fetchedMovie = [search]()
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tableview: UITableView!
+    
+    var fetchedMovie = [Result]()
+    var filtreliData = [Result]()
+    var isSearching = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+        
+        tableview.delegate = self
+        tableview.dataSource = self
+        searchBar.delegate = self
+        searchBar.placeholder = "Search..."
+        
     
-
-    func getApi(){
-        fetchedMovie = []
-        let url = "https://api.themoviedb.org/3/search/movie?api_key=d8cc792aeb02fbe6d958a6c58a962a59&query=Fight+Club"
-        var request = URLRequest(url: URL(string: url)!)
-        request.httpMethod = "GET"
-        
-        let configuration = URLSessionConfiguration.default
-        let session = URLSession(configuration: configuration, delegate: nil, delegateQueue: OperationQueue.main)
-        
-        let task = session.dataTask(with: request) { data, response, error in
-            if error != nil {
-                print("error")
-            }
-            else
-            {
-                do
-                {
-                    let fetchedData = try JSONSerialization.jsonObject(with: data!, options: .mutableLeaves) as! NSArray
-                    for eachFetchedMovie in fetchedData {
-                        let eachMovie = eachFetchedMovie as! [String:Any]
-                        let title = eachMovie["original_title"] as! String
-                        let info = eachMovie["overview"] as! String
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText == "" {
+            isSearching = false
+            self.tableview.reloadData()
+        } else
+        {
+            isSearching = true
+            filtreliData = fetchedMovie.filter({($0["result"] as! String).lowercased().contains(searchText.lowercased())})
+            tableview.reloadData()
+        }
+    }
+    func fetchData() {
+            if let url = URL(string: "https://example.com/api/data.json") {
+                URLSession.shared.dataTask(with: url) { data, response, error in
+                    if let data = data {
+                        do {
+                            var movieResponse = try JSONDecoder().decode(movie.self, from: data)
+                            self.fetchedMovie = movieResponse.results
+                            print(self.fetchedMovie)
+                            DispatchQueue.main.async {
+                                self.tableview.reloadData()
+                            }
                         
-                        self.fetchedMovie.append(search(original_title: title, overview: info))
-                }
-                    print(self.fetchedMovie)
-                }
-                catch
-                {
-                    print("error")
-                }
+                        } catch let error as NSError {
+                            print("JSON dönüştürme hatası: \(error.localizedDescription)")
+                        }
+                    }
+                }.resume()
             }
         }
-        task.resume()
-        
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if isSearching{
+            return filtreliData.count
+        }else {
+            return fetchedMovie.count
+        }
     }
+ 
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+                var data: [String:Any]
+                if isSearching {
+                    data = filtreliData[i]
+                } else {
+                    data = fetchedMovie[indexPath.row].title.capitalized()              }
+                cell.textLabel?.text = data["title"] as? String
+                cell.detailTextLabel?.text = data["description"] as? String
+                return cell
 
-}
-class search {
-    var original_title : String
-    var overview : String
-    
-    
-    init( original_title : String, overview : String){
-        self.original_title = original_title
-        self.overview = overview
-       
-             }
+    }
 }
