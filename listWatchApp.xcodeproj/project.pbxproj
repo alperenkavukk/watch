@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E952B7A251D0378A771222F /* Pods_listWatchApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1737F7B2DAD126765E5FC4A8 /* Pods_listWatchApp.framework */; };
 		A20700B429B08B2200EC4104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20700B329B08B2200EC4104 /* AppDelegate.swift */; };
 		A20700B629B08B2200EC4104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20700B529B08B2200EC4104 /* SceneDelegate.swift */; };
 		A20700B829B08B2200EC4104 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20700B729B08B2200EC4104 /* ViewController.swift */; };
 		A20700BB29B08B2200EC4104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20700B929B08B2200EC4104 /* Main.storyboard */; };
 		A20700BD29B08B2300EC4104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20700BC29B08B2300EC4104 /* Assets.xcassets */; };
 		A20700C029B08B2300EC4104 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20700BE29B08B2300EC4104 /* LaunchScreen.storyboard */; };
+		A20700CA29B08D6B00EC4104 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A20700C929B08D6B00EC4104 /* GoogleService-Info.plist */; };
+		A20700CC29B0913100EC4104 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20700CB29B0913100EC4104 /* SignUpViewController.swift */; };
+		A20700D029B0992A00EC4104 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20700CF29B0992A00EC4104 /* LoginViewController.swift */; };
+		A20700D729B21BAD00EC4104 /* watchhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20700D629B21BAD00EC4104 /* watchhViewController.swift */; };
+		A23B79BA29B3B98800BAA3FC /* searchTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B79B929B3B98800BAA3FC /* searchTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1737F7B2DAD126765E5FC4A8 /* Pods_listWatchApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_listWatchApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		387452E945CFBB38DAC9836C /* Pods-listWatchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-listWatchApp.debug.xcconfig"; path = "Target Support Files/Pods-listWatchApp/Pods-listWatchApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A20700B029B08B2200EC4104 /* listWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = listWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A20700B329B08B2200EC4104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A20700B529B08B2200EC4104 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		A20700BC29B08B2300EC4104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A20700BF29B08B2300EC4104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A20700C129B08B2300EC4104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20700C929B08D6B00EC4104 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A20700CB29B0913100EC4104 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A20700CF29B0992A00EC4104 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A20700D629B21BAD00EC4104 /* watchhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchhViewController.swift; sourceTree = "<group>"; };
+		A23B79B929B3B98800BAA3FC /* searchTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchTabBarViewController.swift; sourceTree = "<group>"; };
+		EDE191632BED32BF83BC893B /* Pods-listWatchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-listWatchApp.release.xcconfig"; path = "Target Support Files/Pods-listWatchApp/Pods-listWatchApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E952B7A251D0378A771222F /* Pods_listWatchApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				A20700B229B08B2200EC4104 /* listWatchApp */,
 				A20700B129B08B2200EC4104 /* Products */,
+				DA9C18DC44687AD50E7F3FFE /* Pods */,
+				B964425A774D3848B861735F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,53 @@
 		A20700B229B08B2200EC4104 /* listWatchApp */ = {
 			isa = PBXGroup;
 			children = (
+				A20700DB29B2224900EC4104 /* ViewController */,
+				A20700DA29B2223E00EC4104 /* ModelView */,
 				A20700B329B08B2200EC4104 /* AppDelegate.swift */,
 				A20700B529B08B2200EC4104 /* SceneDelegate.swift */,
-				A20700B729B08B2200EC4104 /* ViewController.swift */,
 				A20700B929B08B2200EC4104 /* Main.storyboard */,
 				A20700BC29B08B2300EC4104 /* Assets.xcassets */,
 				A20700BE29B08B2300EC4104 /* LaunchScreen.storyboard */,
 				A20700C129B08B2300EC4104 /* Info.plist */,
+				A20700C929B08D6B00EC4104 /* GoogleService-Info.plist */,
 			);
 			path = listWatchApp;
+			sourceTree = "<group>";
+		};
+		A20700DA29B2223E00EC4104 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		A20700DB29B2224900EC4104 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A20700B729B08B2200EC4104 /* ViewController.swift */,
+				A20700CF29B0992A00EC4104 /* LoginViewController.swift */,
+				A20700D629B21BAD00EC4104 /* watchhViewController.swift */,
+				A20700CB29B0913100EC4104 /* SignUpViewController.swift */,
+				A23B79B929B3B98800BAA3FC /* searchTabBarViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B964425A774D3848B861735F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1737F7B2DAD126765E5FC4A8 /* Pods_listWatchApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA9C18DC44687AD50E7F3FFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				387452E945CFBB38DAC9836C /* Pods-listWatchApp.debug.xcconfig */,
+				EDE191632BED32BF83BC893B /* Pods-listWatchApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A20700C429B08B2300EC4104 /* Build configuration list for PBXNativeTarget "listWatchApp" */;
 			buildPhases = (
+				5077074690874B7BA63812C1 /* [CP] Check Pods Manifest.lock */,
 				A20700AC29B08B2200EC4104 /* Sources */,
 				A20700AD29B08B2200EC4104 /* Frameworks */,
 				A20700AE29B08B2200EC4104 /* Resources */,
+				2906FFF93CCB5DFD8B145361 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20700C029B08B2300EC4104 /* LaunchScreen.storyboard in Resources */,
+				A20700CA29B08D6B00EC4104 /* GoogleService-Info.plist in Resources */,
 				A20700BD29B08B2300EC4104 /* Assets.xcassets in Resources */,
 				A20700BB29B08B2200EC4104 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +191,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2906FFF93CCB5DFD8B145361 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-listWatchApp/Pods-listWatchApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-listWatchApp/Pods-listWatchApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-listWatchApp/Pods-listWatchApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5077074690874B7BA63812C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-listWatchApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A20700AC29B08B2200EC4104 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A23B79BA29B3B98800BAA3FC /* searchTabBarViewController.swift in Sources */,
 				A20700B829B08B2200EC4104 /* ViewController.swift in Sources */,
 				A20700B429B08B2200EC4104 /* AppDelegate.swift in Sources */,
+				A20700CC29B0913100EC4104 /* SignUpViewController.swift in Sources */,
+				A20700D029B0992A00EC4104 /* LoginViewController.swift in Sources */,
 				A20700B629B08B2200EC4104 /* SceneDelegate.swift in Sources */,
+				A20700D729B21BAD00EC4104 /* watchhViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +386,7 @@
 		};
 		A20700C529B08B2300EC4104 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 387452E945CFBB38DAC9836C /* Pods-listWatchApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +415,7 @@
 		};
 		A20700C629B08B2300EC4104 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDE191632BED32BF83BC893B /* Pods-listWatchApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
