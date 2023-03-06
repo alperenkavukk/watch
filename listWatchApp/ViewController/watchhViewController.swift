@@ -16,10 +16,7 @@ class watchhViewController: UIViewController , UITableViewDelegate , UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        getPopularData {
-            print("completed")
-            self.tableView.reloadData()
-        }
+       
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -39,23 +36,5 @@ class watchhViewController: UIViewController , UITableViewDelegate , UITableView
     
 
 
-    func getPopularData(completed: @escaping () -> ()){
-        let url = URL(string: "https://api.themoviedb.org/3/movie/343611?api_key=d8cc792aeb02fbe6d958a6c58a962a59")
-        URLSession.shared.dataTask(with: url!) { data, response, error in
-            if error == nil {
-                do {
-                 
-                    let jsonResponse = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableLeaves) as!  Dictionary<String , Any>
-                    
-                    DispatchQueue.main.async {
-                        print(jsonResponse)
-                        completed()
-                    }
-                }catch {
-                    print("erorrrr")
-                }
-            }
-        }.resume()
-          
-    }
+   
 }
