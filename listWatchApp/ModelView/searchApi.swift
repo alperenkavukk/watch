@@ -4,7 +4,6 @@
 //
 //  Created by Alperen Kavuk on 6.03.2023.
 //
-
 import Foundation
 struct movie: Codable {
     let page: Int

@@ -19,8 +19,9 @@
 		A20700D029B0992A00EC4104 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20700CF29B0992A00EC4104 /* LoginViewController.swift */; };
 		A20700D729B21BAD00EC4104 /* watchhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20700D629B21BAD00EC4104 /* watchhViewController.swift */; };
 		A23B79BC29B5F72D00BAA3FC /* searchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B79BB29B5F72D00BAA3FC /* searchApi.swift */; };
-		A23B79BE29B635F900BAA3FC /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B79BD29B635F900BAA3FC /* searchViewController.swift */; };
 		A23B79C129B63F8A00BAA3FC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A23B79C029B63F8A00BAA3FC /* Alamofire */; };
+		A23B79C729B7317500BAA3FC /* aramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B79C629B7317500BAA3FC /* aramaViewController.swift */; };
+		A23F764129B73F3600F13169 /* movieInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23F764029B73F3600F13169 /* movieInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +40,8 @@
 		A20700CF29B0992A00EC4104 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A20700D629B21BAD00EC4104 /* watchhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchhViewController.swift; sourceTree = "<group>"; };
 		A23B79BB29B5F72D00BAA3FC /* searchApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchApi.swift; sourceTree = "<group>"; };
-		A23B79BD29B635F900BAA3FC /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
+		A23B79C629B7317500BAA3FC /* aramaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aramaViewController.swift; sourceTree = "<group>"; };
+		A23F764029B73F3600F13169 /* movieInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieInfoViewController.swift; sourceTree = "<group>"; };
 		EDE191632BED32BF83BC893B /* Pods-listWatchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-listWatchApp.release.xcconfig"; path = "Target Support Files/Pods-listWatchApp/Pods-listWatchApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +107,8 @@
 				A20700CF29B0992A00EC4104 /* LoginViewController.swift */,
 				A20700D629B21BAD00EC4104 /* watchhViewController.swift */,
 				A20700CB29B0913100EC4104 /* SignUpViewController.swift */,
-				A23B79BD29B635F900BAA3FC /* searchViewController.swift */,
+				A23B79C629B7317500BAA3FC /* aramaViewController.swift */,
+				A23F764029B73F3600F13169 /* movieInfoViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -253,8 +256,9 @@
 				A23B79BC29B5F72D00BAA3FC /* searchApi.swift in Sources */,
 				A20700B429B08B2200EC4104 /* AppDelegate.swift in Sources */,
 				A20700CC29B0913100EC4104 /* SignUpViewController.swift in Sources */,
-				A23B79BE29B635F900BAA3FC /* searchViewController.swift in Sources */,
 				A20700D029B0992A00EC4104 /* LoginViewController.swift in Sources */,
+				A23F764129B73F3600F13169 /* movieInfoViewController.swift in Sources */,
+				A23B79C729B7317500BAA3FC /* aramaViewController.swift in Sources */,
 				A20700B629B08B2200EC4104 /* SceneDelegate.swift in Sources */,
 				A20700D729B21BAD00EC4104 /* watchhViewController.swift in Sources */,
 			);
