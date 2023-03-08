@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import FirebaseAuth
 
 extension UIImageView {
     func downloaded(from url: URL, contentMode mode: ContentMode = .scaleAspectFit) {
@@ -40,16 +42,66 @@ class movieInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        infoTextView.text = film?.overview
-        
        
-         
-        let urlString = "https://image.tmdb.org/t/p/w500/"+((film?.posterPath)!)
-        let url = URL(string: urlString)
+        configureItems()
+        movioInfo()
+
+        
+    }
+    
+    private func configureItems(){
+        navigationItem.rightBarButtonItems = [UIBarButtonItem(image: UIImage(systemName: "list.bullet.rectangle"), style: UIBarButtonItem.Style.done, target: self, action: #selectorsaveWatchData()),
+            UIBarButtonItem(image: UIImage(systemName: "heart"), style: UIBarButtonItem.Style.done, target: self, action: #selector(saveLikeData))
+
+        ]
+    }
+    
+   
+    @objc func saveWatchData(){
+        let imgurl = "https://image.tmdb.org/t/p/w500/"+((film?.posterPath)!)
+        let url = URL(string: imgurl)
+        imageView.downloaded(from: url! )
+        let db = Firestore.firestore()
+        var firestoreReference :DocumentReference? = nil
+        let user = ["imgUrl":  imgurl,"postedBy": Auth.auth().currentUser!.email!, "movieTitle": film!.originalTitle] as [String: Any]
+        firestoreReference = db.collection("Watch").addDocument(data: user, completion: { error in
+            if error != nil {
+                
+            }else
+            {
+                print("sucsses")
+            }
+        })
+    }
+    
+    @objc func saveLikeData(){
+        let imgurl = "https://image.tmdb.org/t/p/w500/"+((film?.posterPath)!)
+        let url = URL(string: imgurl)
+        imageView.downloaded(from: url! )
+        let db = Firestore.firestore()
+        var firestoreReference :DocumentReference? = nil
+        let user = ["imgUrl":  imgurl,"postedBy": Auth.auth().currentUser!.email!, "movieTitle": film!.originalTitle] as [String: Any]
+        firestoreReference = db.collection("Like").addDocument(data: user, completion: { error in
+            if error != nil {
+                
+            }else
+            {
+                print("sucsses")
+            }
+        })
+    }
+    
+    
+    
+    
+    func movioInfo(){
+        infoTextView.text = film?.overview
+        title = film?.originalTitle
+        let imgurlString = "https://image.tmdb.org/t/p/w500/"+((film?.posterPath)!)
+        let url = URL(string: imgurlString)
         imageView.downloaded(from: url! )
     }
     
- 
     
 
 }
