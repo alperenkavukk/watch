@@ -43,14 +43,13 @@ class movieInfoViewController: UIViewController {
         infoTextView.text = film?.overview
         
        
-        print("query")
-       
-        let imgUrl = "https://api.themoviedb.org/3/movie/\(film?.id)?api_key=d8cc792aeb02fbe6d958a6c58a962a59&language=en-US&append_to_response=\(film?.posterPath)"
-        imageView.downloaded(from: imgUrl)
+         
+        let urlString = "https://image.tmdb.org/t/p/w500/"+((film?.posterPath)!)
+        let url = URL(string: urlString)
+        imageView.downloaded(from: url! )
     }
     
-
-   
+ 
     
 
 }
