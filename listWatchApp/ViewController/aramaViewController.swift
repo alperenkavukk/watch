@@ -69,7 +69,7 @@ class aramaViewController: UIViewController, UITableViewDataSource, UITableViewD
         performSegue(withIdentifier: "toMovieVc", sender: self)
     }
     override func prepare(for seque: UIStoryboardSegue, sender: Any? ){
-        if let destination = seque.destination as? movieInfoViewController{
+        if let destination = seque.destination as? movieBilgiViewController{
             destination.film = filteredData[tableView.indexPathForSelectedRow!.row]
             
         }

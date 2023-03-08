@@ -111,7 +111,7 @@
         <!--WatchList-->
         <scene sceneID="BFP-UD-Npm">
             <objects>
-                <viewController id="jP8-Wu-bRY" customClass="watchhViewController" customModule="listWatchApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jP8-Wu-bRY" customClass="watchViewController" customModule="listWatchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l74-EN-pph">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,6 +120,19 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="717"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="56" id="uEF-fJ-cK3">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uEF-fJ-cK3" id="ogP-5i-n6r">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mkg-EZ-qi7"/>
@@ -127,7 +140,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="WatchList" image="list.bullet.rectangle" catalog="system" id="53g-jC-N3d"/>
                     <connections>
-                        <outlet property="tableView" destination="nBR-u8-uaC" id="SxM-15-HzE"/>
+                        <outlet property="tableView" destination="nBR-u8-uaC" id="8jM-i2-PTb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ih7-sG-MgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -193,10 +206,10 @@
             </objects>
             <point key="canvasLocation" x="3720.289855072464" y="-243.08035714285714"/>
         </scene>
-        <!--Movie Info View Controller-->
+        <!--Movie Bilgi View Controller-->
         <scene sceneID="p4f-gV-w3R">
             <objects>
-                <viewController id="nbz-kA-XTE" customClass="movieInfoViewController" customModule="listWatchApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nbz-kA-XTE" customClass="movieBilgiViewController" customModule="listWatchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nc2-C2-kaT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -319,7 +332,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Liz-G6-3yW"/>
+        <segue reference="eGT-4L-oOi"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="heart" catalog="system" width="128" height="109"/>
