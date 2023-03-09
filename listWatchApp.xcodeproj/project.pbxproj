@@ -16,12 +16,12 @@
 		A20700C029B08B2300EC4104 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20700BE29B08B2300EC4104 /* LaunchScreen.storyboard */; };
 		A20700CC29B0913100EC4104 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20700CB29B0913100EC4104 /* SignUpViewController.swift */; };
 		A20700D029B0992A00EC4104 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20700CF29B0992A00EC4104 /* LoginViewController.swift */; };
+		A22477C529B9E1E100348072 /* watchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22477C429B9E1E100348072 /* watchListViewController.swift */; };
 		A23B79BC29B5F72D00BAA3FC /* searchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B79BB29B5F72D00BAA3FC /* searchApi.swift */; };
 		A23B79C129B63F8A00BAA3FC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A23B79C029B63F8A00BAA3FC /* Alamofire */; };
 		A23B79C729B7317500BAA3FC /* aramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B79C629B7317500BAA3FC /* aramaViewController.swift */; };
 		A299E90229B8C3CF00662B2E /* movieBilgiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A299E90129B8C3CF00662B2E /* movieBilgiViewController.swift */; };
 		A2AD32B929B8CDF8002DA260 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2AD32B829B8CDF8002DA260 /* GoogleService-Info.plist */; };
-		A2AD32BD29B8D04F002DA260 /* watchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AD32BC29B8D04F002DA260 /* watchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,11 +37,11 @@
 		A20700C129B08B2300EC4104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A20700CB29B0913100EC4104 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		A20700CF29B0992A00EC4104 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A22477C429B9E1E100348072 /* watchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchListViewController.swift; sourceTree = "<group>"; };
 		A23B79BB29B5F72D00BAA3FC /* searchApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchApi.swift; sourceTree = "<group>"; };
 		A23B79C629B7317500BAA3FC /* aramaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aramaViewController.swift; sourceTree = "<group>"; };
 		A299E90129B8C3CF00662B2E /* movieBilgiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieBilgiViewController.swift; sourceTree = "<group>"; };
 		A2AD32B829B8CDF8002DA260 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A2AD32BC29B8D04F002DA260 /* watchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchViewController.swift; sourceTree = "<group>"; };
 		EDE191632BED32BF83BC893B /* Pods-listWatchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-listWatchApp.release.xcconfig"; path = "Target Support Files/Pods-listWatchApp/Pods-listWatchApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +108,7 @@
 				A20700CB29B0913100EC4104 /* SignUpViewController.swift */,
 				A23B79C629B7317500BAA3FC /* aramaViewController.swift */,
 				A299E90129B8C3CF00662B2E /* movieBilgiViewController.swift */,
-				A2AD32BC29B8D04F002DA260 /* watchViewController.swift */,
+				A22477C429B9E1E100348072 /* watchListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -252,10 +252,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2AD32BD29B8D04F002DA260 /* watchViewController.swift in Sources */,
 				A20700B829B08B2200EC4104 /* ViewController.swift in Sources */,
 				A23B79BC29B5F72D00BAA3FC /* searchApi.swift in Sources */,
 				A20700B429B08B2200EC4104 /* AppDelegate.swift in Sources */,
+				A22477C529B9E1E100348072 /* watchListViewController.swift in Sources */,
 				A20700CC29B0913100EC4104 /* SignUpViewController.swift in Sources */,
 				A20700D029B0992A00EC4104 /* LoginViewController.swift in Sources */,
 				A23B79C729B7317500BAA3FC /* aramaViewController.swift in Sources */,

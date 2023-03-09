@@ -111,7 +111,7 @@
         <!--WatchList-->
         <scene sceneID="BFP-UD-Npm">
             <objects>
-                <viewController id="jP8-Wu-bRY" customClass="watchViewController" customModule="listWatchApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jP8-Wu-bRY" customClass="watchListViewController" customModule="listWatchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l74-EN-pph">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
